@@ -35,7 +35,6 @@ def main():
     sys.SetMaxPenetrationRecoverySpeed(4.0)
 
     # SIMPLE TERRAIN
-    '''
     # Create the terrain
     terrain = veh.RigidTerrain(sys)
     patch_mat = chrono.ChMaterialSurfaceNSC()
@@ -80,7 +79,8 @@ def main():
     patch4.SetTexture(veh.GetDataFile("terrain/textures/grass.jpg"), 6.0, 6.0)
 
     terrain.Initialize()
-
+    '''
+    
     # Create and initialize the first vehicle
     hmmwv_1 = veh.HMMWV_Reduced(sys)
     hmmwv_1.SetInitPosition(chrono.ChCoordsysD(chrono.ChVectorD(0, -1.5, 1.0), chrono.ChQuaternionD(1, 0, 0, 0)))
